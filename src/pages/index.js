@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import "normalize.css"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -24,9 +23,11 @@ const IndexPage = () => (
   >
     <div
       style={{
+        backgroundColor: "white",
         margin: "0 auto",
         maxWidth: 640,
         border: "1px solid rgba(50, 50, 50, 0.14)",
+        borderRadius: "10px",
         boxShadow: "2px 4px 6px 1px rgba(50, 50, 50, 0.14)",
       }}
     >
@@ -47,7 +48,14 @@ const IndexPage = () => (
           takimata sanctus est Lorem ipsum dolor sit amet.
         </p>
       </div>
-      <div style={{ borderTop: "1px solid rgba(50, 50, 50, 0.14)", padding: "20px 20px" }}>hallo</div>
+      <div
+        style={{
+          borderTop: "1px solid rgba(50, 50, 50, 0.14)",
+          padding: "20px 20px",
+        }}
+      >
+        hallo
+      </div>
     </div>
   </div>
 )
