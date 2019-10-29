@@ -35,8 +35,8 @@ const IndexPage = () => (
         <div style={{ maxWidth: 300, margin: "0 auto" }}>
           <Image />
         </div>
-        <h1 style={{ textAlign: "center" }}>Hallo</h1>
-        <p>
+        <h1 style={{ textAlign: "center" }}>GroMu Werder Bremen Fanclub</h1>
+        {/* <p>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
@@ -46,7 +46,7 @@ const IndexPage = () => (
           dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
           et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
           takimata sanctus est Lorem ipsum dolor sit amet.
-        </p>
+        </p> */}
       </div>
       <div
         style={{
@@ -54,7 +54,7 @@ const IndexPage = () => (
           padding: "20px 20px",
         }}
       >
-        hallo
+        {/* Link */}
       </div>
     </div>
   </div>
