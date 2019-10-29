@@ -1,16 +1,40 @@
 import React from "react"
-import { Link } from "gatsby"
+import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+const SecondPage = ({ data }) => {
+  console.log(data)
 
-const SecondPage = () => (
-  <Layout>
-    <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
-  </Layout>
-)
+  return (
+    <div>
+      {data.allIcal.edges.map(
+        ({ node: { id, description, start, summary, location } }) => (
+          <ul key={id}>
+            <li>{description}</li>
+            <li>{start}</li>
+            <li>{summary}</li>
+            <li>{location}</li>
+          </ul>
+        )
+      )}
+    </div>
+  )
+}
+
+export const query = graphql`
+  {
+    allIcal(sort: { fields: start }) {
+      edges {
+        node {
+          description
+          location
+          id
+          end
+          start
+          summary
+        }
+      }
+    }
+  }
+`
 
 export default SecondPage

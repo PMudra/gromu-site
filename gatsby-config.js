@@ -39,6 +39,13 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    {
+      resolve: `gatsby-source-ical`,
+      options: {
+        name: `events`,
+        url: `https://www.google.com/calendar/ical/69n0ss9p1mj45m0kls3dvpm570%40group.calendar.google.com/public/basic.ics`,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
