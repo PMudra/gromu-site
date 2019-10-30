@@ -25,6 +25,7 @@
     "typography": "^0.16.19"
   },
   "devDependencies": {
+    "eslint-config-react-app": "^5.0.2",
     "prettier": "^1.18.2"
   },
   "keywords": [
@@ -35,6 +36,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "lint": "eslint .",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""

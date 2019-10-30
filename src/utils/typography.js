@@ -6,7 +6,7 @@ const typography = new Typography({
   headerFontFamily: ["Hind", "sans-serif"],
   bodyFontFamily: ["Hind", "sans-serif"],
   includeNormalize: false,
-  scaleRatio: 3
+  scaleRatio: 3,
 })
 
 export default typography
