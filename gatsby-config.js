@@ -40,10 +40,22 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-ical`,
+      resolve: "gatsby-source-apiserver",
       options: {
-        name: `events`,
-        url: `https://www.google.com/calendar/ical/69n0ss9p1mj45m0kls3dvpm570%40group.calendar.google.com/public/basic.ics`,
+        headers: {
+          "X-Auth-Token": process.env.FOOTBALL_DATA_AUTH_TOKEN,
+        },
+        entitiesArray: [
+          {
+            url: `https://api.football-data.org/v2/teams/12`,
+            name: `team`,
+          },
+          {
+            url: `http://api.football-data.org/v2/teams/12/matches`,
+            name: `matches`,
+            entityLevel: `matches`,
+          },
+        ],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
