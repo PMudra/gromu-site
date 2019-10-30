@@ -5,7 +5,7 @@ const SecondPage = ({ data }) => <div>{data.team.venue}</div>
 
 export const query = graphql`
   {
-    team {
+    team(alternative_id: { eq: 12 }) {
       venue
     }
   }
