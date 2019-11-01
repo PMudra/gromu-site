@@ -1,4 +1,5 @@
 import React from "react"
+import classnames from "classnames"
 import Image from "../components/image"
 import styles from "./index.module.css"
 
@@ -15,7 +16,7 @@ const IndexPage = () => (
   // </Layout>
   <div className={styles.layout}>
     <section className={styles.section}>
-      <div className={`${styles.intro} ${styles.content}`}>
+      <div className={classnames(styles.intro, styles.content)}>
         <div className={styles.logo}>
           <Image />
         </div>
