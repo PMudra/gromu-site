@@ -3,34 +3,39 @@
   flex-direction: column;
 }
 
-.intro {
-  display: grid;
-  gap: 32px;
-  align-content: center;
-  /* gap: 32px; */
-}
-
 .logo {
-  margin: 32px 0;
-  max-width: 220px;
-}
-
-@media (min-width: 480px) {
-  .intro {
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 32px;
-    align-content: center;
-  }
+  margin: 0 auto;
+  padding-bottom: var(--space);
+  max-width: 140px;
 }
 
 .content {
-  max-width: 768px;
+  max-width: 960px;
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 var(--space);
 }
 
 .section:nth-child(2n) {
-  background-color: beige;
+  background-color: var(--nebula);
+}
+
+.intro {
+  padding-top: var(--space);
+}
+
+@media (min-width: 600px) {
+  .logo {
+    margin: unset;
+    max-width: unset;
+  }
+
+  .intro {
+    padding-top: var(--space);
+    padding-bottom: var(--space);
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(auto, 220px) auto;
+    gap: var(--space);
+    align-content: center;
+  }
 }
