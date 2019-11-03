@@ -55,16 +55,18 @@ const Matches = () => {
             },
           }) => (
             <table key={id} className={styles.match}>
-              <tr>
-                <td>{homeTeam}</td>
-                <td className={styles.right}>{score.fullTime.homeTeam}</td>
-                <td>{localDate}</td>
-              </tr>
-              <tr>
-                <td>{awayTeam}</td>
-                <td className={styles.right}>{score.fullTime.awayTeam}</td>
-                <td>{scheduled && localTime}</td>
-              </tr>
+              <tbody>
+                <tr>
+                  <td>{homeTeam}</td>
+                  <td className={styles.right}>{score.fullTime.homeTeam}</td>
+                  <td>{localDate}</td>
+                </tr>
+                <tr>
+                  <td>{awayTeam}</td>
+                  <td className={styles.right}>{score.fullTime.awayTeam}</td>
+                  <td>{scheduled && localTime}</td>
+                </tr>
+              </tbody>
             </table>
           )
         )}
