@@ -1,0 +1,17 @@
+.matches {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.match {
+  margin: 0;
+}
+
+.match td {
+  border: none;
+  padding: 0;
+}
+
+.right {
+  text-align: right;
+}

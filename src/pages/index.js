@@ -1,6 +1,7 @@
 import React from "react"
 import classnames from "classnames"
 import Image from "../components/image"
+import Matches from "../components/matches"
 import SEO from "../components/seo"
 import styles from "./index.module.css"
 
@@ -41,12 +42,7 @@ const IndexPage = () => (
     </section>
     <section className={styles.section}>
       <div className={styles.content}>
-        <h1>Spiele</h1>
-        <p>
-          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-          kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-          amet.
-        </p>
+        <Matches />
       </div>
     </section>
     <section className={styles.section}>
