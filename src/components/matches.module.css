@@ -1,17 +1,33 @@
 .matches {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  grid-template-columns: 1fr max-content 1fr;
+  gap: 24px 8px;
 }
 
-.match {
-  margin: 0;
+.team {
+  text-align: center;
+  overflow: hidden;
+  font-size: 0.8em;
 }
 
-.match td {
-  border: none;
-  padding: 0;
+@media (min-width: 480px) {
+  .matches {
+    gap: 24px 16px;
+  }
+
+  .team {
+    font-size: unset;
+  }
 }
 
-.right {
-  text-align: right;
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.small {
+  font-size: 0.75em;
+  color: hsl(0, 0%, 0%, 70%);
 }

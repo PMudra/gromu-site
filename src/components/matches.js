@@ -38,8 +38,6 @@ const Matches = () => {
     }
   `)
 
-  console.log(data)
-
   return (
     <>
       <h1>Spiele</h1>
@@ -54,20 +52,23 @@ const Matches = () => {
               fields: { scheduled, localDate, localTime },
             },
           }) => (
-            <table key={id} className={styles.match}>
-              <tbody>
-                <tr>
-                  <td>{homeTeam}</td>
-                  <td className={styles.right}>{score.fullTime.homeTeam}</td>
-                  <td>{localDate}</td>
-                </tr>
-                <tr>
-                  <td>{awayTeam}</td>
-                  <td className={styles.right}>{score.fullTime.awayTeam}</td>
-                  <td>{scheduled && localTime}</td>
-                </tr>
-              </tbody>
-            </table>
+            <React.Fragment key={id}>
+              <span className={styles.team}>
+                {homeTeam}
+              </span>
+              <div className={styles.info}>
+                <span className={styles.small}>
+                  {localDate} {scheduled && localTime}
+                </span>
+                <span>
+                  {score.fullTime.homeTeam} : {score.fullTime.awayTeam}
+                </span>
+                <span className={styles.small}>
+                  ({score.halfTime.homeTeam} : {score.halfTime.awayTeam})
+                </span>
+              </div>
+              <span className={styles.team}>{awayTeam}</span>
+            </React.Fragment>
           )
         )}
       </div>
