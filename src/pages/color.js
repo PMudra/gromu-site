@@ -36,7 +36,7 @@ export default () => {
       <Example backgroundColor="white" />
       <Example backgroundColor="var(--dark-slate-gray)" />
       <Example backgroundColor="var(--japanese-laurel)" />
-      <Example backgroundColor="var(--salem2)" />
+      <Example backgroundColor="var(--salem)" />
       <Example backgroundColor="var(--light-steeel-blue)" />
       <Example backgroundColor="var(--medium-aquamarine)" />
     </>
