@@ -29,6 +29,7 @@ module.exports = {
         icon: `src/images/gromu-01.png`,
       },
     },
+    `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {

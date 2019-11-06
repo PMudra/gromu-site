@@ -1,5 +1,5 @@
 import React from "react"
-import Logo from "../components/image"
+import { Logo } from "../components/images"
 
 const LoremIpsum = () =>
   "Ein nicht hoch genug zu schätzendes Bremer Faustpfand wird ihnen durch die enge Verzahnung und Durchlässigkeit zum Profiteam um Cheftrainer Florian Kohfeldt ermöglicht. „Eine viel bessere Konstellation wird es später wohl nur schwierig noch mal so geben“, ahnt Björn Schierenbeck und begründet: „Dass so viele Verantwortliche eine so große Nähe zum Nachwuchs haben, Kenntnisse darüber, wie Nachwuchsarbeit funktioniert, großes Interesse, Spieler aus dem Nachwuchs zu integrieren und auch enorme Ressourcen dafür freischalten.“"

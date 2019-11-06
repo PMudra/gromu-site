@@ -27,5 +27,9 @@
   ],
 
   // Add the IDs of extensions you want installed when the container is created in the array below.
-  "extensions": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint"]
+  "extensions": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "jpoissonnier.vscode-styled-components"
+  ]
 }
