@@ -1,7 +1,12 @@
 import React from "react"
 import { Global, css } from "@emotion/core"
+import styled from "@emotion/styled"
+import facepaint from "facepaint"
 import SEO from "./seo"
 import Header from "./header"
+
+const breakpoints = [480, 720]
+const mq = facepaint(breakpoints.map(bp => `@media (min-width: ${bp}px)`))
 
 const globalStyle = css`
   :root {
@@ -12,19 +17,17 @@ const globalStyle = css`
     --light-steel-blue: #dbe5df;
     --medium-aquamarine: #73da8c;
   }
-  @media (min-width: 480px) {
-    html {
-      font-size: 112.5%;
-    }
-  }
-  @media (min-width: 720px) {
-    html {
-      font-size: 125%;
-    }
-  }
   body {
     background-color: var(--light-steel-blue);
+    min-width: 320px;
   }
+  ${mq({ html: { fontSize: ["100%", "112.5%", "125%"] } })}
+`
+
+const Main = styled.main`
+  max-width: 800px;
+  margin: 0 auto;
+  ${mq({ padding: [12, 24] })}
 `
 
 export default ({ children, title }) => (
@@ -32,6 +35,6 @@ export default ({ children, title }) => (
     <SEO title={title} />
     <Global styles={globalStyle} />
     <Header />
-    <main>{children}</main>
+    <Main>{children}</Main>
   </>
 )

@@ -9,6 +9,7 @@
     "@emotion/styled": "^10.0.23",
     "classnames": "^2.2.6",
     "dotenv": "^8.2.0",
+    "facepaint": "^1.2.1",
     "gatsby": "^2.17.9",
     "gatsby-image": "^2.2.30",
     "gatsby-plugin-emotion": "^4.1.13",
