@@ -2,13 +2,11 @@ import Typography from "typography"
 
 const typography = new Typography({
   baseFontSize: "16px",
-  //baseLineHeight: 1.0,
-  //blockMarginBottom: 0.75,
+  scaleRatio: 3,
+  bodyColor: "rgba(0, 0, 0, 0.87)",
   headerFontFamily: ["Hind", "sans-serif"],
   bodyFontFamily: ["Hind", "sans-serif"],
-  includeNormalize: false,
-  // scaleRatio: 0.5,
-  //headerColor: "#08100c"
+  includeNormalize: true,
 })
 
 export default typography
