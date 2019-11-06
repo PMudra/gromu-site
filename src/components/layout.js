@@ -9,7 +9,7 @@ const globalStyle = css`
     --japanese-laurel: #04741c;
     --salem: #0a9b3e;
     --dark-slate-gray: #09110d;
-    --light-steeel-blue: #dbe5df;
+    --light-steel-blue: #dbe5df;
     --medium-aquamarine: #73da8c;
   }
   @media (min-width: 480px) {
@@ -21,6 +21,9 @@ const globalStyle = css`
     html {
       font-size: 125%;
     }
+  }
+  body {
+    background-color: var(--light-steel-blue);
   }
 `
 
