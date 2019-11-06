@@ -26,7 +26,7 @@ module.exports = {
         background_color: `#d9e4de`,
         theme_color: `#d9e4de`,
         display: `minimal-ui`,
-        icon: `src/images/gromu-01.png`,
+        icon: `src/images/gromu-logo.png`,
       },
     },
     `gatsby-plugin-emotion`,
