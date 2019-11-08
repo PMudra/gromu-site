@@ -1,4 +1,5 @@
 import React from "react"
+import Layout from "../components/layout"
 import { Logo } from "../components/images"
 
 const LoremIpsum = () =>
@@ -32,13 +33,13 @@ const Example = ({ backgroundColor }) => (
 
 export default () => {
   return (
-    <>
+    <Layout>
       <Example backgroundColor="white" />
       <Example backgroundColor="var(--dark-slate-gray)" />
       <Example backgroundColor="var(--japanese-laurel)" />
       <Example backgroundColor="var(--salem)" />
       <Example backgroundColor="var(--light-steeel-blue)" />
       <Example backgroundColor="var(--medium-aquamarine)" />
-    </>
+    </Layout>
   )
 }
