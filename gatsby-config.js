@@ -23,12 +23,13 @@ module.exports = {
         name: `GroMu Fanclub`,
         short_name: `GroMu`,
         start_url: `/`,
-        background_color: `#d9e4de`,
-        theme_color: `#d9e4de`,
+        background_color: `#0a9b3e`,
+        theme_color: `#0a9b3e`,
         display: `minimal-ui`,
-        icon: `src/images/gromu-01.png`,
+        icon: `src/images/gromu-logo.png`,
       },
     },
+    `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
