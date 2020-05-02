@@ -13,7 +13,8 @@
 	"extensions": [
 		"dbaeumer.vscode-eslint",
 		"esbenp.prettier-vscode",
-		"jpoissonnier.vscode-styled-components"
+		"jpoissonnier.vscode-styled-components",
+		"prisma.vscode-graphql"
 	]
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
