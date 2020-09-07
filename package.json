@@ -20,7 +20,7 @@
     "gatsby-plugin-typography": "^2.5.10",
     "gatsby-source-apiserver": "^2.1.7",
     "gatsby-source-filesystem": "^2.3.27",
-    "gatsby-transformer-sharp": "^2.5.13",
+    "gatsby-transformer-sharp": "^2.5.14",
     "moment-timezone": "^0.5.31",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
